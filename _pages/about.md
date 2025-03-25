@@ -31,6 +31,6 @@ latest_posts:
 
 Not to be confused with [this guy](https://www.inforum.com/news/fargo/have-you-seen-this-man-fargo-police-say-he-is-armed-and-dangerous).
 
-I am a theoretical studying turbulence in plasmas and fluids as well as animal behavior emergent from interaction with fluid substrates. My recent research has focused on olfactory search using Bayesian methods.
+I am a theoretical studying turbulence in plasmas and fluids as well as animal behavior emergent from interaction with fluid environments. My recent research has focused on olfactory search using Bayesian methods and reinforcement learning.
 
 Besides academic stuff, I play classical viola and chess.
