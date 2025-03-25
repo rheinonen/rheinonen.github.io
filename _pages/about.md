@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+nav_order: 1
 subtitle: Postdoctoral researcher in physics
 
 profile:

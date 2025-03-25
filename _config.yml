@@ -42,7 +42,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -190,7 +190,11 @@ exclude:
   - readme_preview/
   - vendor
   - assets/jupyter/blog.ipynb
-  
+  - _posts/
+  - _pages/repositories.md
+  - _pages/blog.md
+  - _pages/dropdown.md
+
 keep_files:
   - CNAME
   - .nojekyll
