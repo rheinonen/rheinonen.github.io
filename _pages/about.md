@@ -28,3 +28,7 @@ latest_posts:
 ---
 
 Not to be confused with [this guy](https://www.inforum.com/news/fargo/have-you-seen-this-man-fargo-police-say-he-is-armed-and-dangerous).
+
+I am a physicist who researches turbulence in plasmas and fluids as well as animal behavior when immersed in fluid substrates. My recent research has focused on olfactory search using Bayesian methods.
+
+Besides academic stuff, I play classical viola and chess.
