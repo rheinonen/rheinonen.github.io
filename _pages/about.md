@@ -26,3 +26,5 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+Not to be confused with [this guy](https://www.inforum.com/news/fargo/have-you-seen-this-man-fargo-police-say-he-is-armed-and-dangerous).
