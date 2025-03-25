@@ -10,7 +10,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>[PiMLB Laboratory](https://malga.unige.it/research/pimlb/), Machine Learning Genoa Center</p>
+    <p>PiMBL Laboratory</p>
+    <p>Machine Learning Genoa Center</p>
     <p>University of Genoa</p>
     <p>Genoa, Italy</p>
 
