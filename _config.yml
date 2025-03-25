@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Robin
 middle_name: A.
 last_name: Heinonen
-contact_note: >
-  I prefer to be contacted by email
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Homepage for Dr. Robin A. Heinonen
 footer_text: >
