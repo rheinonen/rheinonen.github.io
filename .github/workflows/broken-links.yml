@@ -44,47 +44,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
-
-      - name: Link Checker 🔗 (source files)
+      - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
-          args: >
-            --verbose
-            --no-progress
-            --format markdown
-            --output lychee-report.md
-            --timeout 20
-            --max-retries 3
-            --retry-wait-time 2
-            --exclude-path README.md
-            --exclude-path _pages/404.md
-            --exclude-path _pages/blog.md
-            --exclude-path _posts/2018-12-22-distill.md
-            --exclude-path _posts/2023-04-24-videos.md
-            --exclude-path _books/the_godfather.md
-            --exclude-path node_modules
-            --exclude-path vendor
-            './**/*.md'
-            './**/*.html'
-
-      - name: Print report to logs
-        if: always()
-        run: |
-          echo "===== Lychee report ====="
-          sed -n '1,200p' lychee-report.md || true
-
-      - name: Upload lychee report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: lychee-report
-          path: lychee-report.md
+          # removed md files that include liquid tags
+          args: --user-agent 'curl/7.54' --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --exclude-path _books/the_godfather.md --verbose --no-progress './**/*.md' './**/*.html'
