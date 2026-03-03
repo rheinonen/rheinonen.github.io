@@ -53,7 +53,7 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
-      - name: Link Checker 🔗 (rendered site)
+      - name: Link Checker 🔗 (source files)
         uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
@@ -65,7 +65,22 @@ jobs:
             --timeout 20
             --max-retries 3
             --retry-wait-time 2
-            ./_site/**/*.html
+            --exclude-path README.md
+            --exclude-path _pages/404.md
+            --exclude-path _pages/blog.md
+            --exclude-path _posts/2018-12-22-distill.md
+            --exclude-path _posts/2023-04-24-videos.md
+            --exclude-path _books/the_godfather.md
+            --exclude-path node_modules
+            --exclude-path vendor
+            './**/*.md'
+            './**/*.html'
+
+      - name: Print report to logs
+        if: always()
+        run: |
+          echo "===== Lychee report ====="
+          sed -n '1,200p' lychee-report.md || true
 
       - name: Upload lychee report
         if: always()
